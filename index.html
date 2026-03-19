@@ -1,15 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio das Atividades</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecnogil | Marketing e Tecnologia</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0b0f1a;
+      color: #fff;
+    }
+
+    header {
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0b0f1a;
+      position: sticky;
+      top: 0;
+    }
+
+    header h1 {
+      color: #00ff88;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .hero {
+      padding: 100px 10%;
+      text-align: center;
+      background: linear-gradient(135deg, #0b0f1a, #111a2e);
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 15px 25px;
+      background: #00ff88;
+      color: #000;
+      border: none;
+      margin: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    .services, .diferenciais {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #111a2e;
+      padding: 25px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #00ff88;
+    }
+
+    .cta {
+      text-align: center;
+      background: #00ff88;
+      color: #000;
+      padding: 60px 10%;
+    }
+
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+    }
+
+  </style>
 </head>
+
 <body>
-    <h1>Hello World!</h1>
-    <p>This is a simple HTML document.</p>
-    <br/>
-    <p>Agora sim!!!</p>
+
+<header>
+  <h1>Tecnogil</h1>
+  <nav>
+    <a href="#">Início</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#blog">Blog</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Transformamos sua presença digital em vendas reais</h2>
+  <p>Marketing, tecnologia e estratégia para empresas que querem crescer de verdade.</p>
+  <button class="btn">Quero vender mais</button>
+  <button class="btn">Falar com especialista</button>
+</section>
+
+<section>
+  <h2>Resultados que falam por si</h2>
+  <p>Mais clientes, mais vendas e crescimento consistente para empresas em todo o Brasil.</p>
+</section>
+
+<section id="servicos">
+  <h2>Serviços</h2>
+
+  <div class="services">
+    <div class="card">
+      <h3>Marketing e Publicidade</h3>
+      <p>Gestão de redes sociais, tráfego pago e estratégias para gerar vendas todos os dias.</p>
+    </div>
+
+    <div class="card">
+      <h3>Identidade Visual</h3>
+      <p>Criação de marcas fortes que geram reconhecimento e autoridade.</p>
+    </div>
+
+    <div class="card">
+      <h3>Suporte Remoto</h3>
+      <p>Resolvemos problemas no seu computador sem você sair de casa.</p>
+    </div>
+
+    <div class="card">
+      <h3>Sistema de Gestão</h3>
+      <p>Controle completo do seu negócio: vendas, estoque e financeiro.</p>
+    </div>
+
+    <div class="card">
+      <h3>DevOps</h3>
+      <p>Automação, infraestrutura e performance para empresas escalarem.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Por que escolher a Tecnogil?</h2>
+
+  <div class="diferenciais">
+    <div class="card">
+      <h3>Foco em Resultado</h3>
+      <p>Nosso objetivo é gerar lucro para sua empresa.</p>
+    </div>
+
+    <div class="card">
+      <h3>Atendimento Rápido</h3>
+      <p>Suporte ágil e humanizado.</p>
+    </div>
+
+    <div class="card">
+      <h3>Estratégias Personalizadas</h3>
+      <p>Cada cliente recebe uma estratégia única.</p>
+    </div>
+
+    <div class="card">
+      <h3>Tecnologia + Marketing</h3>
+      <p>Integração completa para escalar resultados.</p>
+    </div>
+  </div>
+</section>
+
+<section id="blog">
+  <h2>Blog</h2>
+  <p>Conteúdo sobre tecnologia, marketing digital e atualidades.</p>
+</section>
+
+<section class="cta">
+  <h2>Pronto para levar sua empresa para o próximo nível?</h2>
+  <button class="btn">Falar no WhatsApp</button>
+</section>
+
+<footer id="contato">
+  <p>© 2026 Tecnogil - Todos os direitos reservados</p>
+  <p>Contato: (92) 99371-8899</p>
+</footer>
 
 </body>
 </html>
